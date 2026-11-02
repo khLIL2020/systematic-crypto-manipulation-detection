@@ -1,0 +1,128 @@
+{
+  "runs": [
+    "bd23c63f-9bc6-43a6-9d15-66062dd20025",
+    "9998681c-533d-450b-acf4-5e1c261838c7",
+    "9035723d-4eab-490e-af81-d3971c96d928",
+    "83026a72-2b4d-4434-a022-78c2c0a33f80",
+    "4b5dfc04-ba41-4c73-adf5-c5f1c65ceb71",
+    "8f6a339c-01cb-4507-b541-88d5734f9971",
+    "d6fa7ab6-acad-4b53-a030-4b5be7806d5b",
+    "1da6091d-0e98-4aa3-8a91-88fdf311d237",
+    "e225ea74-6e68-45ad-8846-b3110a48b179",
+    "29c9e599-9003-4633-ac86-34bd4ab20ccc",
+    "a7dc06f7-220b-4c5b-b062-347edc6007c1",
+    "439edd04-0ce4-4560-bd9a-b0e1a37769b8",
+    "a802fea8-c2bd-444f-be84-3aa46d978448",
+    "914be5ec-ad93-4d06-8e20-9b84f33bbe62",
+    "4295caa3-6349-4dad-b457-b7c71ce2f476",
+    "b25a32f2-8022-400c-a4a9-4041e7e4cb34",
+    "7a2c789b-1baf-4f30-b4b2-8c85fc1c6a6c",
+    "1ff0c3ca-4223-4090-b185-a73a431d0af5",
+    "13fefff3-487e-49f0-a918-1431a7ce4a18",
+    "e55f9849-f8be-4647-bd84-4b6c1071d93b",
+    "e34d523a-f314-4a7a-8316-58e8a41ae112",
+    "966bdf7d-3bc0-4dc1-81da-553751f55447",
+    "72878f4c-de29-47e6-be46-a0f5ec032593",
+    "e0f28e16-56e2-4246-b7fa-3c599f806c97",
+    "47d61ce8-f7ad-43eb-93ed-010205f13224",
+    "0ea3e35f-a549-4784-b483-8c587e7cb09e",
+    "0fd30904-b441-4f70-9cb2-42fc8e9db8cb",
+    "31fad4bf-dfe1-4ca2-8b28-58aa595634ab",
+    "28a04789-b9b2-42fa-8169-09ed062f7dd2",
+    "e3c11bb4-cc39-4ab8-b6c1-4205d12b09ed",
+    "124c2ce0-fae7-4f2f-8acb-6b40a95ac1e9",
+    "bdaf2d3f-3cb4-4db8-9d95-8bbdcd51551d"
+  ],
+  "best_job": "47d61ce8-f7ad-43eb-93ed-010205f13224",
+  "active_model": {
+    "artifact": "457ca0120ee8ea93f10ba9e1f88b44e2d0b5267ce51059dd25070a5ccbbe0cc9",
+    "job_id": "47d61ce8-f7ad-43eb-93ed-010205f13224",
+    "promoted_at": "2026-11-02T16:26:50.757819+00:00",
+    "heldout": {
+      "macro_f1": 0.2434069379149503,
+      "accuracy": 0.4434673366834171,
+      "precision": [
+        0.9449477351916377,
+        0.029686174724342665,
+        0.03684210526315789
+      ],
+      "recall": [
+        0.4530571333110591,
+        0.3888888888888889,
+        0.2079207920792079
+      ],
+      "confusion_matrix": [
+        [
+          1356,
+          1107,
+          530
+        ],
+        [
+          36,
+          35,
+          19
+        ],
+        [
+          43,
+          37,
+          21
+        ]
+      ],
+      "samples": 3184,
+      "always_normal_macro_f1": 0.3230262802870865,
+      "beats_always_normal": false
+    },
+    "label_kind": "weak future-price anomaly",
+    "experimental": true,
+    "disabled_features": [
+      "news_present"
+    ],
+    "quality": "research-only; not validated for trading"
+  },
+  "replay": {
+    "kind": "replay",
+    "symbol": "BTC/USDT",
+    "seed": 42,
+    "threads": 4,
+    "notes": "Measured single vs four-worker native recorded-window replay",
+    "l2": 0.01,
+    "epochs": 350,
+    "days": 7,
+    "repeats": 1000,
+    "dataset_id": "d3d065bd6d065037af78c72b10046aae3e041d0d8095f9b8dc5c172309ebc789",
+    "model_id": "457ca0120ee8ea93f10ba9e1f88b44e2d0b5267ce51059dd25070a5ccbbe0cc9",
+    "source_artifact": "d4749e8a60cc9abacabaeac384716b32e0ad16d3eac0a7afe17b87cc9007e238",
+    "code_hash": "513931f7087ee3713f7a98f0580727d4188fece0972c4af3243c177426df8e16",
+    "python_version": "3.12.3",
+    "numpy_version": "2.2.5",
+    "native_binary_hash": "804daa9962258b0d96255ff3678028d16b701ce7ede836bec1edb4446c4eb613",
+    "id": "d036686c-bebf-4c9d-a770-5d992143a037",
+    "config_hash": "0c484f224bceaa35474c57d21f50a5562c2a475a688cf9efb221b9c4a8711eab",
+    "status": "succeeded",
+    "created_at": "2026-11-02T16:26:50.923627+00:00",
+    "updated_at": "2026-11-02T16:26:51.706663+00:00",
+    "runtime_seconds": 0.700146292016143,
+    "metrics": {
+      "baseline_ms": 378.52675,
+      "parallel_ms": 168.154375,
+      "speedup": 2.251066913959271,
+      "checksum": 15643267.394033037,
+      "windows_scored": 15856000,
+      "unique_windows": 15856,
+      "repeats": 1000,
+      "threads": 4,
+      "engine": "cpp",
+      "lock_free": true,
+      "workload": "recorded feature-window replay; repeated passes",
+      "hardware": "arm64",
+      "cpu_count": 11
+    },
+    "error": null,
+    "artifact_id": null
+  },
+  "reproducibility": {
+    "rerun_id": "ce5609f5-797f-479e-9077-9ae69cdfc9a2",
+    "same_model_hash": true,
+    "same_config_hash": true
+  }
+}

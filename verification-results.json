@@ -1,0 +1,263 @@
+{
+  "verified_at": "2026-11-02T16:45:55.831797+00:00",
+  "ui_http_status": 200,
+  "api_http_status": 200,
+  "frontend_proxy_native_loaded": true,
+  "health": {
+    "apis": {
+      "binance": {
+        "status": "failed",
+        "detail": "HTTPError: 451 Client Error:  for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=30",
+        "http_status": 451,
+        "checked_at": "2026-11-02T16:45:02.910909+00:00"
+      },
+      "coingecko": {
+        "status": "working",
+        "detail": "HTTP request succeeded",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:03.951323+00:00"
+      },
+      "cointelegraph_rss": {
+        "status": "working",
+        "detail": "30 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:04.147753+00:00"
+      },
+      "google_news:BTC": {
+        "status": "working",
+        "detail": "100 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:04.690964+00:00"
+      },
+      "google_news:ETH": {
+        "status": "working",
+        "detail": "100 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:04.889537+00:00"
+      },
+      "google_news:SOL": {
+        "status": "working",
+        "detail": "100 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:05.584886+00:00"
+      },
+      "google_news:DOGE": {
+        "status": "working",
+        "detail": "99 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:06.328803+00:00"
+      },
+      "google_news:XRP": {
+        "status": "working",
+        "detail": "100 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:06.486591+00:00"
+      },
+      "google_news:ADA": {
+        "status": "working",
+        "detail": "66 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.030149+00:00"
+      },
+      "google_news:LINK": {
+        "status": "working",
+        "detail": "38 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.289039+00:00"
+      },
+      "google_news:AVAX": {
+        "status": "working",
+        "detail": "44 dated headlines; lexicon sentiment",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.440496+00:00"
+      },
+      "coinbase:SOL": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.653789+00:00"
+      },
+      "coinbase:BTC": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.654543+00:00"
+      },
+      "coinbase:ETH": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.656488+00:00"
+      },
+      "coinbase:DOGE": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.852296+00:00"
+      },
+      "coinbase:ADA": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.854630+00:00"
+      },
+      "coinbase:XRP": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.853658+00:00"
+      },
+      "coinbase:LINK": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.968139+00:00"
+      },
+      "coinbase:AVAX": {
+        "status": "working",
+        "detail": "350 completed 5m candles; USD product",
+        "http_status": 200,
+        "checked_at": "2026-11-02T16:45:07.974177+00:00"
+      }
+    },
+    "engine": {
+      "cpp_loaded": true,
+      "detail": "/Users/benzoique/Documents/Codex/2026-11-02/reposition-and-extend-the-existing-systematic/outputs/systematic/backend/native_lib/libscore_engine.dylib",
+      "lock_free": true
+    },
+    "running": true,
+    "last_scan_at": "2026-11-02T16:45:07.978974+00:00",
+    "last_error": null,
+    "interval_sec": 60.0,
+    "active_model": {
+      "artifact": "457ca0120ee8ea93f10ba9e1f88b44e2d0b5267ce51059dd25070a5ccbbe0cc9",
+      "job_id": "47d61ce8-f7ad-43eb-93ed-010205f13224",
+      "promoted_at": "2026-11-02T16:26:50.757819+00:00",
+      "heldout": {
+        "macro_f1": 0.2434069379149503,
+        "accuracy": 0.4434673366834171,
+        "precision": [
+          0.9449477351916377,
+          0.029686174724342665,
+          0.03684210526315789
+        ],
+        "recall": [
+          0.4530571333110591,
+          0.3888888888888889,
+          0.2079207920792079
+        ],
+        "confusion_matrix": [
+          [
+            1356,
+            1107,
+            530
+          ],
+          [
+            36,
+            35,
+            19
+          ],
+          [
+            43,
+            37,
+            21
+          ]
+        ],
+        "samples": 3184,
+        "always_normal_macro_f1": 0.3230262802870865,
+        "beats_always_normal": false
+      },
+      "label_kind": "weak future-price anomaly",
+      "experimental": true,
+      "disabled_features": [
+        "news_present"
+      ],
+      "quality": "research-only; not validated for trading"
+    },
+    "dataset_id": "d3d065bd6d065037af78c72b10046aae3e041d0d8095f9b8dc5c172309ebc789",
+    "limitations": [
+      "Weak price-anomaly labels are not verified manipulation.",
+      "Scores are experimental and uncalibrated.",
+      "News sentiment uses a headline lexicon; no social feed."
+    ],
+    "disabled": {
+      "timescaledb": "Removed legacy random-data writer; SQLite owns real scan metrics",
+      "clerk": "Local app does not require auth keys"
+    }
+  },
+  "coins": [
+    {
+      "symbol": "BTC",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 121
+    },
+    {
+      "symbol": "ETH",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 62
+    },
+    {
+      "symbol": "SOL",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 46
+    },
+    {
+      "symbol": "DOGE",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 23
+    },
+    {
+      "symbol": "XRP",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 61
+    },
+    {
+      "symbol": "ADA",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 32
+    },
+    {
+      "symbol": "LINK",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 23
+    },
+    {
+      "symbol": "AVAX",
+      "flag": "watch",
+      "engine": "cpp",
+      "data_status": "live",
+      "age_seconds": 56,
+      "sentiment_count": 6
+    }
+  ],
+  "persisted_jobs_after_restart": 70,
+  "recent_automatic_scans": [
+    "2026-11-02T16:45:07.978974+00:00",
+    "2026-11-02T16:44:26.268620+00:00",
+    "2026-11-02T16:43:31.503057+00:00",
+    "2026-11-02T16:42:26.198724+00:00"
+  ],
+  "tests_passed": 16,
+  "frontend_build": "passed with TypeScript checks"
+}
