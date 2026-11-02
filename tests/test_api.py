@@ -23,3 +23,16 @@ class ApiTests(unittest.TestCase):
         r=self.client.get('/api/detection/signals').json()
         self.assertEqual(r['risk_band'],'unavailable');self.assertIsNone(r['manipulation_score'])
         self.assertEqual(self.client.get('/api/detection/alerts').json()['alerts'],[])
+    def test_dashboard_separates_directional_and_watch_flags(self):
+        now=time.time()
+        coins=[
+            {'id':'bitcoin','symbol':'BTC','flag':'pump','scanned_at':'now','observed_at':now,'manipulation_score':.9},
+            {'id':'ethereum','symbol':'ETH','flag':'watch','scanned_at':'now','observed_at':now,'manipulation_score':.55},
+            {'id':'solana','symbol':'SOL','flag':'clear','scanned_at':'now','observed_at':now,'manipulation_score':.2},
+        ]
+        self.rt.store.set('snapshot',{'coins':coins,'alerts':[c for c in coins if c['flag'] in ('pump','dump','watch')],'last_scan_at':'now'})
+        stats=self.client.get('/api/dashboard').json()['stats']
+        self.assertEqual(stats['coins_scanned'],3)
+        self.assertEqual(stats['flagged_windows'],1)
+        self.assertEqual(stats['watch_windows'],1)
+        self.assertEqual(stats['alert_windows'],2)

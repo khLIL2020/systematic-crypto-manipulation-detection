@@ -79,7 +79,9 @@ def create_app(runtime=None,background=True):
     @app.get('/api/dashboard')
     def dashboard():
         s=rt.snapshot();coins=s['coins'];scored=[c for c in coins if c.get('manipulation_score') is not None]
-        return {'stats':{'coins_scanned':len(scored),'flagged_windows':len(s['alerts']),'experiment_runs':sum(j['status']=='succeeded' for j in rt.store.jobs()),'avg_risk':sum(c['manipulation_score'] for c in scored)/max(1,len(scored))},'as_of':s.get('last_scan_at'),'chains':[]}
+        directional=[c for c in s.get('alerts',[]) if c.get('flag') in ('pump','dump')]
+        watch=[c for c in s.get('alerts',[]) if c.get('flag')=='watch']
+        return {'stats':{'coins_scanned':len(scored),'flagged_windows':len(directional),'watch_windows':len(watch),'alert_windows':len(s.get('alerts',[])),'experiment_runs':sum(j['status']=='succeeded' for j in rt.store.jobs()),'avg_risk':sum(c['manipulation_score'] for c in scored)/max(1,len(scored))},'as_of':s.get('last_scan_at'),'chains':[]}
     @app.get('/api/detection/history')
     def history():
         return [{'time':s['last_scan_at'],'risk':sum(c.get('manipulation_score') or 0 for c in s['coins'])/max(1,sum(c.get('manipulation_score') is not None for c in s['coins'])),'coverage':sum(c.get('manipulation_score') is not None for c in s['coins']),'alerts':len(s['alerts'])} for s in rt.store.history()]
